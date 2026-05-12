@@ -1,6 +1,7 @@
+import lizardUrl from '../assets/lagartija.gif';
 import {GAME,LEVELS} from './config.js';
 
-const img=new Image();img.src='/src/assets/lagartija.gif';
+const img=new Image();img.src=lizardUrl;
 const rnd=(a,b)=>a+Math.random()*(b-a);
 const hit=(a,b)=>a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y;
 
